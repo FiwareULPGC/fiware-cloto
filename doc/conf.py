@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+    # -*- coding: utf-8 -*-
 
 import os
 
@@ -17,14 +17,22 @@ if not on_rtd:
 
     # Override default css to get a larger width for local build
     def setup(app):
+        app.add_stylesheet('https://media.readthedocs.org/css/sphinx_rtd_theme.css')
+        app.add_stylesheet('https://media.readthedocs.org/css/readthedocs-doc-embed.css')
+        app.add_stylesheet('fiware_readthedocs.css')
         app.add_stylesheet('mystyle.css')
+        app.add_stylesheet('pygments-monokai.css')
+
+
 else:
     # Override default css to get a larger width for ReadTheDoc build
     html_context = {
         'css_files': [
             'https://media.readthedocs.org/css/sphinx_rtd_theme.css',
             'https://media.readthedocs.org/css/readthedocs-doc-embed.css',
-            '_static/mystyle.css'
+            '_static/mystyle.css',
+            '_static/fiware_readthedocs.css',
+            '_static/pygments-monokai.css'
         ],
     }
 
@@ -53,3 +61,6 @@ html_sidebars = {
     '**': ['globaltoc.html', 'sourcelink.html', 'searchbox.html'],
     'using/windows': ['windowssidebar.html', 'searchbox.html'],
 }
+
+#highlight_language ='default'
+#pygments_style = 'borland'
