@@ -52,7 +52,7 @@ release = ''
 
 # HTML configuration
 html_title = title + ': ' + subtitle
-html_favicon = '_static/favicon.ico'
+html_favicon = 'favicon.ico'
 html_show_sphinx = True
 html_show_copyright = False
 
