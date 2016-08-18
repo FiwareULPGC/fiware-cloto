@@ -30,9 +30,9 @@ else:
         'css_files': [
             'https://media.readthedocs.org/css/sphinx_rtd_theme.css',
             'https://media.readthedocs.org/css/readthedocs-doc-embed.css',
-            '_static/mystyle.css',
-            '_static/fiware_readthedocs.css',
-            '_static/pygments-monokai.css'
+            #'_static/mystyle.css',
+            'http://193.145.136.179/fiware_styles/fiware_readthedocs.css',
+            #'_static/pygments-monokai.css'
         ],
     }
 
