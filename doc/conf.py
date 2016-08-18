@@ -35,6 +35,12 @@ else:
             #'_static/pygments-monokai.css'
         ],
     }
+    
+    html_theme_options = {
+        'collapse_navigation': False,
+        'display_version': False,
+        #'navigation_depth': 3,
+    }
 
 # The suffix of source filenames
 source_suffix = '.rst'
