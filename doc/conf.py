@@ -17,11 +17,10 @@ if not on_rtd:
 
     # Override default css to get a larger width for local build
     def setup(app):
-        app.add_stylesheet('https://media.readthedocs.org/css/sphinx_rtd_theme.css')
-        app.add_stylesheet('https://media.readthedocs.org/css/readthedocs-doc-embed.css')
-        app.add_stylesheet('fiware_readthedocs.css')
-        app.add_stylesheet('mystyle.css')
-        app.add_stylesheet('pygments-monokai.css')
+        #app.add_stylesheet('https://media.readthedocs.org/css/sphinx_rtd_theme.css')
+        #app.add_stylesheet('https://media.readthedocs.org/css/readthedocs-doc-embed.css')
+        app.add_stylesheet('http://10.13.32.11/fiware_styles/fiware_readthedocs.css')
+
 
 
 else:
@@ -34,12 +33,6 @@ else:
             'http://193.145.136.179/fiware_styles/fiware_readthedocs.css',
             #'_static/pygments-monokai.css'
         ],
-    }
-    
-    html_theme_options = {
-        'collapse_navigation': False,
-        'display_version': False,
-        #'navigation_depth': 3,
     }
 
 # The suffix of source filenames
